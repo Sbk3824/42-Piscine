@@ -1,0 +1,6 @@
+Credentials cache: API:35201
+        Principal: skuntoji@42.US.ORG
+
+  Issued                Expires               Principal
+Jun 18 14:13:49 2018  Jun 19 00:13:49 2018  krbtgt/42.US.ORG@42.US.ORG
+Jun 18 14:43:04 2018  Jun 19 00:13:49 2018  host/vgs-fn1.42.us.org@42.US.ORG

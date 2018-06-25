@@ -1,0 +1,4 @@
+dn:uid=skuntoji,ou=june,ou=2018,ou=people,dc=42,dc=us,dc=org
+changetype: modify
+replace: mobile
+mobile: +1 669 212 0142
