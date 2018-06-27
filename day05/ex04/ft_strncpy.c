@@ -6,13 +6,13 @@
 /*   By: skuntoji <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/06/25 15:01:21 by skuntoji          #+#    #+#             */
-/*   Updated: 2018/06/26 02:44:47 by skuntoji         ###   ########.fr       */
+/*   Updated: 2018/06/26 19:05:33 by skuntoji         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 char	*ft_strncpy(char *dest, char *src, unsigned int n)
 {
-	int i;
+	unsigned int i;
 
 	i = 0;
 	while (i < n && src[i])

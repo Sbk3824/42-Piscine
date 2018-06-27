@@ -6,13 +6,13 @@
 /*   By: skuntoji <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/06/26 00:36:41 by skuntoji          #+#    #+#             */
-/*   Updated: 2018/06/26 15:54:32 by skuntoji         ###   ########.fr       */
+/*   Updated: 2018/06/26 19:06:04 by skuntoji         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int		ft_strncmp(char *s1, char *s2, unsigned int n)
 {
-	int i;
+	unsigned int i;
 
 	i = 0;
 	while (s1[i] && i < n)
