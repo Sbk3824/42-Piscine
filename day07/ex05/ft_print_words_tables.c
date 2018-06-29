@@ -1,18 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_generic.c                                       :+:      :+:    :+:   */
+/*   ft_print_words_tables.c                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: skuntoji <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/06/28 19:13:16 by skuntoji          #+#    #+#             */
-/*   Updated: 2018/06/28 19:14:24 by skuntoji         ###   ########.fr       */
+/*   Created: 2018/06/28 17:31:06 by skuntoji          #+#    #+#             */
+/*   Updated: 2018/06/28 17:31:36 by skuntoji         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+void	ft_putchar(char c);
 
-void main()
+void	ft_print_words_tables(char **tab)
 {
-	write(1, "Tut tut ; Tut tut\n", 18);
+	int i;
+	int j;
+
+	i = 0;
+	while (tab[i])
+	{
+		j = 0;
+		while (tab[i][j])
+		{
+			ft_putchar(tab[i][j]);
+			j++;
+		}
+		ft_putchar('\n');
+		i++;
+	}
 }
+
