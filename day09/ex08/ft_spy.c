@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_spy.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: oaaron <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: skuntoji <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/06/29 14:11:56 by oaaron            #+#    #+#             */
-/*   Updated: 2018/06/29 14:29:46 by oaaron           ###   ########.fr       */
+/*   Created: 2018/06/29 14:39:25 by skuntoji          #+#    #+#             */
+/*   Updated: 2018/06/29 15:38:04 by skuntoji         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include <unistd.h>
 
 char	*ft_strrev(char *str)
 {
@@ -90,10 +90,10 @@ int		main(int argc, char **argv)
 	{
 		temp = ft_strlowcase(ft_trim(argv[i]));
 		temp = ft_strrev(ft_trim(ft_strrev(temp)));
-	   	if (ft_strcmp(temp, "president") == 0 ||
+		if (ft_strcmp(temp, "president") == 0 ||
 			ft_strcmp(temp, "bauer") == 0 ||
 			ft_strcmp(temp, "attack") == 0)
-			 printf("ALERT!");
+			write(1, "ALERT!!!\n", 9);
 	}
 	return (0);
 }
