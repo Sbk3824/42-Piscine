@@ -11,5 +11,13 @@ Code Testing Repos :
 1. Stupidity : https://github.com/mirror12k/42us-stupidity
 2. Towel : https://github.com/oscardemadriz/towel
 
+***
+
+Exam Repos:
+1. Exam Miner : https://github.com/fwuensche/42-exam-miner
+2. Exams Hub : https://github.com/miniponps/42-Piscine-C/tree/master/Exam
+
+***
+
 
 
