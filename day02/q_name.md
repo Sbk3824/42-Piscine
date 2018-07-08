@@ -1,13 +1,13 @@
 ### Day02 Solution File Names
 
-ex00/ft_print_alphabet.c
-ex01/ft_print_reverse_alphabet.c
-ex02/ft_print_numbers.c
-ex03/ft_is_negative.c
-ex04/ft_print_comb.c
-ex05/ft_print_comb2.c
-ex06/ft_putnbr.c
-ex07/ft_print_combn.c
+ex00/ft_print_alphabet.c <br>
+ex01/ft_print_reverse_alphabet.c <br>
+ex02/ft_print_numbers.c <br>
+ex03/ft_is_negative.c <br>
+ex04/ft_print_comb.c <br>
+ex05/ft_print_comb2.c <br>
+ex06/ft_putnbr.c <br>
+ex07/ft_print_combn.c 
 
 ### Results 
 
