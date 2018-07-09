@@ -7,18 +7,18 @@ ex03/ft_strcpy.c <br>
 ex04/ft_strncpy.c <br>
 ex05/ft_strstr.c <br>
 ex06/ft_strcmp.c <br>
-ex07/ft_strncmp.c 
-ex08/ft_strupcase.c
-ex09/ft_strlowcase.c
-ex10/ft_strcapitalize.c
-ex11/ft_str_is_alpha.c
-ex12/ft_str_is_numeric.c
-ex13/ft_str_is_lowercase.c
-ex14/ft_str_is_uppercase.c
-ex15/ft_str_is_printable.c
-ex16/ft_strcat.c
-ex17/ft_strncat.c
-ex18/ft_strlcat.c
+ex07/ft_strncmp.c <br>
+ex08/ft_strupcase.c<br>
+ex09/ft_strlowcase.c<br>
+ex10/ft_strcapitalize.c<br>
+ex11/ft_str_is_alpha.c<br>
+ex12/ft_str_is_numeric.c<br>
+ex13/ft_str_is_lowercase.c<br>
+ex14/ft_str_is_uppercase.c<br>
+ex15/ft_str_is_printable.c<br>
+ex16/ft_strcat.c<br>
+ex17/ft_strncat.c<br>
+ex18/ft_strlcat.c<br>
 ex19/ft_strlcpy
 
 ### Results 
