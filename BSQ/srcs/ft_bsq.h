@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bsq.h                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pcrosnie <pcrosnie@student.42.fr>          +#+  +:+       +#+        */
+/*   By: skuntoji <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/09/21 13:21:21 by pcrosnie          #+#    #+#             */
-/*   Updated: 2015/09/24 14:02:44 by cmutti           ###   ########.fr       */
+/*   Created: 2018/07/11 22:36:36 by skuntoji          #+#    #+#             */
+/*   Updated: 2018/07/11 22:36:40 by skuntoji         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,7 @@ int					ft_check_square(char *str, int position[2],
 									t_instr *info, int size);
 t_record			*ft_new_record(void);
 void				ft_put_result(char *str, int start);
-void				ft_strconcat(char *dest, char *src, int *size,
+void				ft_concat(char *dest, char *src, int *size,
 									int buff_size);
 int					ft_bigger_sqr(char *str, int position[2],
 									t_instr *info, int size);

@@ -3,23 +3,22 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: cmutti <cmutti@student.42.fr>              +#+  +:+       +#+        */
+/*   By: skuntoji <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/09/21 13:30:40 by cmutti            #+#    #+#             */
-/*   Updated: 2015/09/24 22:20:12 by cmutti           ###   ########.fr       */
+/*   Created: 2018/07/11 22:37:37 by skuntoji          #+#    #+#             */
+/*   Updated: 2018/07/11 23:21:33 by skuntoji         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
 #include "ft_bsq.h"
 #define BUFF1 1000000
 #define BUFF2 8000000
 
-void	ft_strconcat(char *dest, char *src, int *size, int buff_size)
+void	ft_concat(char *dest, char *src, int *size, int buff_size)
 {
 	int		i;
 	int		c;
-	
+
 	i = 0;
 	if ((*size) > buff_size && (*size) % buff_size == 0)
 	{
@@ -35,7 +34,7 @@ void	ft_strconcat(char *dest, char *src, int *size, int buff_size)
 		i++;
 		c++;
 	}
-		while (c >= 0)
+	while (c >= 0)
 	{
 		src[c] = '\0';
 		c--;
@@ -43,7 +42,7 @@ void	ft_strconcat(char *dest, char *src, int *size, int buff_size)
 	dest[i] = '\0';
 }
 
-void	ft_check_infinity(int *size, char *str, int buf)
+void	ft_infinity_check(int *size, char *str, int buf)
 {
 	if (*size == buf)
 	{
@@ -62,8 +61,6 @@ char	*ft_read(int fd, int buff_size)
 	char	*temp;
 	int		size;
 
-
-	printf("Reading the string with fd:%d and buff_size:%d\n",fd,buff_size);
 	size = 0;
 	str = (char*)malloc(sizeof(*str) * (size + 1));
 	temp = (char*)malloc(sizeof(*str) * (size + 1));
@@ -76,14 +73,23 @@ char	*ft_read(int fd, int buff_size)
 		free(str);
 		str = (char*)malloc(sizeof(*str) * (size + 1));
 		ft_strcpy(str, temp);
-		ft_strconcat(str, buff, &size, buff_size);
+		ft_concat(str, buff, &size, buff_size);
 		str[size] = '\0';
 		free(temp);
 		temp = (char*)malloc(sizeof(*temp) * (size + 1));
-		ft_check_infinity(&size, str, buff_size);
+		ft_infinity_check(&size, str, buff_size);
 	}
 	free(temp);
 	return (str);
+}
+
+void	temp_read(int fd)
+{
+	char *str;
+
+	str = ft_read(fd, BUFF2);
+	ft_start(str);
+	close(fd);
 }
 
 int		main(int argc, char **argv)
@@ -92,18 +98,17 @@ int		main(int argc, char **argv)
 	char	*str;
 	int		fd;
 
-	printf("---------------------Welcome to Square Generator---------------------\n\n");
 	str = NULL;
 	i = 0;
 	if (argc != 1)
 		while (++i < argc)
 		{
+			if (i > 1)
+				ft_putchar('\n');
 			fd = open(argv[i], O_RDONLY);
 			if (fd > 0)
 			{
-				str = ft_read(fd, BUFF2);
-				ft_start(str);
-				close(fd);
+				temp_read(fd);
 			}
 			else
 				ft_putstr("map error\n");

@@ -3,21 +3,19 @@
 /*                                                        :::      ::::::::   */
 /*   ft_check_instructions.c                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: cmutti <cmutti@student.42.fr>              +#+  +:+       +#+        */
+/*   By: skuntoji <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/09/21 20:03:45 by cmutti            #+#    #+#             */
-/*   Updated: 2015/09/24 22:02:20 by cmutti           ###   ########.fr       */
+/*   Created: 2018/07/11 22:35:38 by skuntoji          #+#    #+#             */
+/*   Updated: 2018/07/11 22:35:41 by skuntoji         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_bsq.h"
-#include <stdio.h>
 
 int			ft_strlen_mod(char *str)
 {
 	int		i;
-	// returns first line length
-	printf("Looking for first line length...");
+
 	i = 0;
 	while (str[i])
 	{
@@ -25,12 +23,8 @@ int			ft_strlen_mod(char *str)
 			return (0);
 		i++;
 		if (str[i] == '\n')
-		{
-			printf("%d\n",i);
 			return (i + 1);
-		}
 	}
-	printf("%d\n",i);
 	return (i);
 }
 
@@ -49,12 +43,11 @@ char		*cut_str(char *str, int n)
 	return (cpy);
 }
 
-int			check_validity(char *str, int a)
+int			check_v(char *str, int a)
 {
 	int i;
 	int b;
 
-	printf("checking for validity of first line with length:%d\n",a);
 	i = 0;
 	b = a - 5;
 	if (a < 5)
@@ -83,14 +76,12 @@ t_instr		*ft_first_line(char *str)
 
 	ptr = NULL;
 	a = ft_strlen_mod(str);
-	if (check_validity(str, a) == 1)
+	if (check_v(str, a) == 1)
 	{
-		printf("all good !!\n");
 		str2 = (char *)malloc(sizeof(*str2) * 1000);
 		ptr = (t_instr *)malloc(sizeof(t_instr) * 1000);
 		i = 0;
 		str2 = cut_str(str, a - 5);
-		printf("cut string, height:%s\n",str2);
 		ptr->height = ft_atoi(str2);
 		ptr->length = a;
 		ptr->empty = str[a - 4];
