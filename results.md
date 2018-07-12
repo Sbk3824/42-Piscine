@@ -60,13 +60,15 @@ ex00: OK | ex01: OK | ex02: OK | ex03: OK | ex04: OK | ex05: OK | ex06: OK | ex0
 
 ### Rush 00 (125%)
 
-Correct with bonus points
+Correct with bonus points.
 
 ### Rush 01 (0%)
 
 Feedback from Evaluator - "Project gives a solution for a blank sudoku. Unfortunately that is a basic test and we have to stop there. Otherwise, your project solved difficult sudokus with ease and in a very timely manner. Make sure you handle your errors correctly and I'm sure you all will do well in the next rush project."
 
-### Rush 02
+### Rush 02 (0%)
+
+No Attempt.
 
 ***
 
@@ -74,6 +76,9 @@ Feedback from Evaluator - "Project gives a solution for a blank sudoku. Unfortun
   - Sastantua (0%)
   - Match-N-Match (100%)
   - EvalExpr
+    * MOULINETTE 45 % [ex00: Segmentation fault]
+    * Overall 60 %
+    * see evalexpr readme for Pass/Fail test cases.
   
 ***
 
