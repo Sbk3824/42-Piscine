@@ -4,7 +4,7 @@
 Week 1 : Day00 - Day04 <br>
 Week 2 : Day05 - Day09 <br>
 Week 3 : Day10 - Day13 <br>
-Week 4 : Team Project
+Week 4 : Team Project (BSQ)
 
 ***
 
@@ -26,5 +26,13 @@ Results:
 
 ***
 
+Individual Projects
+1. Sastantua (0%)
+2. Match-N-Match (100%)
+3. EvalExpr (60%)
+   - MOULINETTE 45 % [ex00: Segmentation fault]
+   - see evalexpr readme for Pass/Fail test cases.
+   
+ ***
 
 
