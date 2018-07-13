@@ -84,5 +84,5 @@ No Attempt.
 
 ### Final Project 
 
-BSQ - 100%
+BSQ - 100% <br>
 basic_tests: OK | functional_tests: OK
