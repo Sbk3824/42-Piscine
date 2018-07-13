@@ -82,4 +82,7 @@ No Attempt.
   
 ***
 
-### Final Project - BSQ
+### Final Project 
+
+BSQ - 100%
+basic_tests: OK | functional_tests: OK
