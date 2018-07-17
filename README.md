@@ -8,6 +8,18 @@ Week 4 : Team Project (BSQ)
 
 ***
 
+### Subject
+
+Day 00 : Shell Scripting<br>
+Day 01 : Shell Scripting<br>
+Day 04 : Recursion<br>
+Day 05 : Strings<br>
+Day 07 : Strings and Memory Allocation<br>
+Day 11 : Linked List<br>
+Day 12 : File Manipulation
+
+***
+
 ### Code Testing Repos :
 1. Stupidity : https://github.com/mirror12k/42us-stupidity
 2. Towel : https://github.com/oscardemadriz/towel
@@ -26,12 +38,10 @@ Week 4 : Team Project (BSQ)
 ***
 
 ### Individual Projects
-1. Sastantua (0%)
-2. Match-N-Match (100%)
-3. EvalExpr (60%)
-   - MOULINETTE 45 % [ex00: Segmentation fault]
-   - see evalexpr readme for Pass/Fail test cases.
-   
+1. Sastantua 
+2. Match-N-Match 
+3. EvalExpr 
+
  ***
 
 ### Final Project
