@@ -29,6 +29,7 @@ Day 12 : File Manipulation
 ### Exam Repos:
 1. Exam Miner : https://github.com/fwuensche/42-exam-miner
 2. Exams Hub : https://github.com/miniponps/42-Piscine-C/tree/master/Exam
+3. Exam Tips : https://github.com/Sbk3824/42-Piscine/wiki/FInal-Exam-tips
 
 ***
 
